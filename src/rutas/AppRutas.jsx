@@ -1,20 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "../paginas/Home";
 import Productos from "../paginas/Productos";
-
-function Home() {
-  return (
-    <div className="text-center mt-20">
-      <h1 className="text-4xl font-bold text-blue-600 mb-4">🛍️ FakeStore Catalog</h1>
-      <p className="text-gray-700">Explora nuestra colección de productos.</p>
-      <Link
-        to="/productos"
-        className="mt-6 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-      >
-        Ver productos
-      </Link>
-    </div>
-  );
-}
 
 export default function AppRutas() {
   return (
