@@ -1,19 +1,24 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Encabezado from "../componentes/Encabezado";
+import Pie from "../componentes/Pie";
 import Home from "../paginas/Home";
 import Productos from "../paginas/Productos";
 
 export default function AppRutas() {
   return (
     <BrowserRouter>
-      <nav className="flex justify-center gap-6 p-4 bg-gray-200">
-        <Link to="/">Inicio</Link>
-        <Link to="/productos">Productos</Link>
-      </nav>
+      <div className="flex flex-col min-h-screen">
+        <Encabezado />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/productos" element={<Productos />} />
-      </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/productos" element={<Productos />} />
+          </Routes>
+        </main>
+
+        <Pie />
+      </div>
     </BrowserRouter>
   );
 }
