@@ -1,3 +1,5 @@
+# 🛍️ FakeStore Catalog
+
 Aplicación **SPA en React 19** desarrollada con **Vite** y **TailwindCSS**, que consume datos reales desde la API pública [FakeStoreAPI](https://fakestoreapi.com/products).  
 El proyecto simula un pequeño **catálogo de tienda online**, mostrando productos con su nombre, precio, categoría e imagen.
 
@@ -16,15 +18,51 @@ El proyecto simula un pequeño **catálogo de tienda online**, mostrando product
 
 ## ⚙️ Instalación y ejecución local
 
-Clonar el repositorio:
+Sigue estos pasos para ejecutar el proyecto en tu máquina:
+
+
+Abre una terminal y ejecuta:
 
 git clone https://github.com/LuisGalvan1512/PC03_DAE.git
+
+Luego entra a la carpeta del proyecto:
+
 cd PC03_DAE
+
+
+Ejecuta el siguiente comando para instalar todos los paquetes necesarios:
+
 npm install
+
+Esto descargará React, Vite, TailwindCSS, Axios, React Router, y demás dependencias.
+
+
+Para iniciar el proyecto localmente:
+
 npm run dev
 
-Luego abre en tu navegador:
+Luego abre el enlace que aparece en consola, normalmente:
 👉 http://localhost:5173
+
+
+Si deseas generar la versión lista para subir a Netlify o Vercel:
+
+npm run build
+
+Esto creará una carpeta `dist/` con los archivos optimizados del proyecto.
+
+
+npm run preview
+
+Esto inicia un servidor local para probar la versión final antes de subirla al hosting.
+
+---
+
+**✅ Listo**, tu proyecto estará corriendo en local y podrás ver:
+- La página principal (ruta `/`) con el hero y productos destacados.
+- El catálogo completo en la ruta `/productos`.
+- Navegación SPA sin recargar la página.
+- Estilos aplicados con TailwindCSS.
 
 ---
 
