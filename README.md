@@ -1,16 +1,90 @@
-# React + Vite
+Aplicación **SPA en React 19** desarrollada con **Vite** y **TailwindCSS**, que consume datos reales desde la API pública [FakeStoreAPI](https://fakestoreapi.com/products).  
+El proyecto simula un pequeño **catálogo de tienda online**, mostrando productos con su nombre, precio, categoría e imagen.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React 19** + **Vite**
+- 🧭 **React Router DOM** (navegación SPA)
+- 🌐 **Axios** (consumo de API pública)
+- 🎨 **TailwindCSS** (estilos responsivos)
+- 💾 **JavaScript ES6+**
+- 🧱 Estructura modular con componentes reutilizables
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Instalación y ejecución local
 
-## Expanding the ESLint configuration
+Clonar el repositorio:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+git clone https://github.com/LuisGalvan1512/PC03_DAE.git
+cd PC03_DAE
+npm install
+npm run dev
+
+Luego abre en tu navegador:
+👉 http://localhost:5173
+
+---
+
+## 🌐 Deploy del proyecto
+
+✅ Enlace en producción:
+👉 [https://fakestore-pc03.netlify.app/](https://fakestore-pc03.netlify.app/)
+
+---
+
+## 📂 Estructura del proyecto
+
+src/
+ ├── componentes/          # Encabezado y pie de página
+ ├── paginas/              # Home y Productos
+ ├── rutas/                # Configuración de React Router
+ ├── servicios/            # Lógica de consumo de API con Axios
+ ├── App.jsx               # Componente raíz
+ └── main.jsx              # Punto de entrada principal
+
+---
+
+## 🏠 Rutas principales
+
+| Ruta | Descripción |
+|------|-------------|
+| `/` | Hero con nombre del proyecto, descripción y productos destacados. |
+| `/productos` | Catálogo completo con nombre, precio, categoría e imagen. |
+
+---
+
+## 🧠 Características implementadas
+
+### 🏠 Home
+- Sección hero con nombre del proyecto y descripción.
+- Listado de 4 productos destacados obtenidos desde la API.
+- Botón para acceder al catálogo completo.
+
+### 📜 Productos
+- Consumo real de datos con Axios desde FakeStoreAPI.
+- Renderiza 3 propiedades por producto: nombre, precio y categoría.
+- Diseño en cuadrícula con TailwindCSS.
+- Loader animado mientras carga la API.
+- Manejo básico de errores y contador de productos cargados.
+
+### 🔗 Navegación
+- Barra superior con enlaces activos (Inicio, Productos).
+- Sistema SPA con React Router DOM.
+
+### 🎨 Estilos
+- TailwindCSS aplicado globalmente.
+- Diseño limpio, moderno y totalmente responsivo.
+
+---
+
+## 🎥 Video demostrativo (2–3 min)
+
+
+
+## 👨‍💻 Autor
+
+**Luis Galván**  
+Proyecto desarrollado como parte del curso **Desarrollo de Aplicaciones Empresariales – TECSUP 2025-II**  
